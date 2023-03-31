@@ -2,39 +2,58 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-03T23:10:38 IST" name="Default suite" finished-at="2023-02-03T23:11:12 IST" duration-ms="33603">
+  <suite started-at="2023-03-31T15:24:09 IST" name="Default suite" finished-at="2023-03-31T15:24:41 IST" duration-ms="32003">
     <groups>
     </groups>
-    <test started-at="2023-02-03T23:10:38 IST" name="Default test" finished-at="2023-02-03T23:11:12 IST" duration-ms="33603">
+    <test started-at="2023-03-31T15:24:09 IST" name="Default test" finished-at="2023-03-31T15:24:41 IST" duration-ms="32003">
       <class name="NeoStocksLOGINtest.NeostocksLoginTest1">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-02-03T23:10:38 IST" name="openBrowser" finished-at="2023-02-03T23:10:56 IST" duration-ms="17751" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-03-31T15:24:10 IST" name="openBrowser" finished-at="2023-03-31T15:24:17 IST" duration-ms="7831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-02-03T23:10:56 IST" name="LoginToApp" finished-at="2023-02-03T23:11:11 IST" duration-ms="15440" status="FAIL">
+        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-03-31T15:24:17 IST" name="LoginToApp" finished-at="2023-03-31T15:24:41 IST" duration-ms="24098" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to find element with locator By.xpath: //input[@name='ctl00$MainContent$_wp_enteraccesspin$txt_accesspin']
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='OK'])[2]"}
+  (Session info: chrome=111.0.5563.147)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c79de1b436268eb48ed51a3bbd79f578, findElement {using=xpath, value=(//a[text()='OK'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shrey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64009/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c79de1b436268eb48ed51a3bbd79f578]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@name='ctl00$MainContent$_wp_enteraccesspin$txt_accesspin']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='OK'])[2]"}
+  (Session info: chrome=111.0.5563.147)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c79de1b436268eb48ed51a3bbd79f578, findElement {using=xpath, value=(//a[text()='OK'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shrey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64009/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c79de1b436268eb48ed51a3bbd79f578
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
-at NeoStocksLOGIN.NeoStocks3Passwordpage.InputNeoStocks3PasswordpagePassword(NeoStocks3Passwordpage.java:23)
-at NeoStocksLOGINtest.NeostocksLoginTest1.LoginToApp(NeostocksLoginTest1.java:64)
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at NeoStocksLOGIN.NeoStocks4PopupPage.clickNeoStocks4PopupPageOK(NeoStocks4PopupPage.java:19)
+at NeoStocksLOGINtest.NeostocksLoginTest1.LoginToApp(NeostocksLoginTest1.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,30 +92,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToApp -->
-        <test-method signature="VerifyUserID()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-02-03T23:11:11 IST" name="VerifyUserID" finished-at="2023-02-03T23:11:11 IST" duration-ms="1" status="SKIP">
+        <test-method signature="VerifyUserID()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-03-31T15:24:41 IST" name="VerifyUserID" finished-at="2023-03-31T15:24:41 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to find element with locator By.xpath: //input[@name='ctl00$MainContent$_wp_enteraccesspin$txt_accesspin']
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='OK'])[2]"}
+  (Session info: chrome=111.0.5563.147)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c79de1b436268eb48ed51a3bbd79f578, findElement {using=xpath, value=(//a[text()='OK'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shrey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64009/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c79de1b436268eb48ed51a3bbd79f578]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@name='ctl00$MainContent$_wp_enteraccesspin$txt_accesspin']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='OK'])[2]"}
+  (Session info: chrome=111.0.5563.147)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c79de1b436268eb48ed51a3bbd79f578, findElement {using=xpath, value=(//a[text()='OK'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\shrey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64009/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c79de1b436268eb48ed51a3bbd79f578
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
-at NeoStocksLOGIN.NeoStocks3Passwordpage.InputNeoStocks3PasswordpagePassword(NeoStocks3Passwordpage.java:23)
-at NeoStocksLOGINtest.NeostocksLoginTest1.LoginToApp(NeostocksLoginTest1.java:64)
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at NeoStocksLOGIN.NeoStocks4PopupPage.clickNeoStocks4PopupPageOK(NeoStocks4PopupPage.java:19)
+at NeoStocksLOGINtest.NeostocksLoginTest1.LoginToApp(NeostocksLoginTest1.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,14 +173,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUserID -->
-        <test-method is-config="true" signature="Logout(org.testng.ITestResult)[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-02-03T23:11:12 IST" name="Logout" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1675446072110" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-02-03T23:11:12 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1675446072124" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-03-31T15:24:41 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680256481997" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="Logout(org.testng.ITestResult)[pri:0, instance:NeoStocksLOGINtest.NeostocksLoginTest1@3cebbb30]" started-at="2023-03-31T15:24:41 IST" name="Logout" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680256481997" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
       </class> <!-- NeoStocksLOGINtest.NeostocksLoginTest1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
